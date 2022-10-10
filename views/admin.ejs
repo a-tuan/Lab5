@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Input Number</label>
+ <input type="text" class="textInput">
+ <button type="button" class="myBtn">submit</button>
+ <label class="textOutput"></label>
+ <script>
+   btn = document.querySelector('.myBtn');
+   btn.onclick = function() {
+       var inputValue = document.querySelector('.textInput').value
+       var output = document.querySelector('.textOutput')
+       switch (inputValue % 7) {
+           case 1:
+               output.innerHTML = 'Sunday';
+               break;
+           case 2:
+               output.innerHTML = 'Monday';
+               break;
+           case 3:
+               output.innerHTML = 'Tuesday';
+               break;
+           case 4:
+               output.innerHTML = 'Webnesday';
+               break;
+           case 5:
+               output.innerHTML = 'Thursday';
+               break;
+           case 6:
+               output.innerHTML = 'Friday';
+               break;
+           case 0:
+               output.innerHTML = 'Saturday';
+               break;
+           default:
+               output.innerHTML = 'Invalid'
+       }
+   }
+  </script>
+</body>
+</html>
