@@ -3,11 +3,27 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <style>
+      body {
+        background-image: radial-gradient(
+          circle farthest-corner at 92.3% 71.5%,
+        rgba(83, 138, 214, 1) 0%,
+        rgba(134, 231, 214, 1) 90%
+        );
+      }
+      h1 {
+        font-size: 36px;
+        font-weight: bold;
+        margin-top: 20px;
+      }
+      
+
+    </style>
   </head>
   <body>
     <h1><%= title %></h1>
-    <p>Welcome to <%= name %></p>
+    <p style="font-size: 26px; font-weight: bold; margin-top: 10px;">Welcome to <%= name %></p>
     <p> <%- table %> </p>
-    <a href="http://localhost:3000">logout</a>
+    <a style="font-size: 18px;" href="http://localhost:3000">logout</a>
   </body>
 </html>

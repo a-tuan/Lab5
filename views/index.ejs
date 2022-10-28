@@ -3,11 +3,47 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
+    <style>
+      body {
+        background-image: radial-gradient(
+          circle farthest-corner at 92.3% 71.5%,
+        rgba(83, 138, 214, 1) 0%,
+        rgba(134, 231, 214, 1) 90%
+        );
+      }
+      h1 {
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 100px;
+      }
+      p {
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 20px;
+      }
+      input {
+        background: #fff;
+          font-size: 20px;
+          margin-top: 30px;
+          padding: 16px 20px;
+          border-radius: 26px;
+          border: 1px solid #D4D3E8;
+          text-transform: uppercase;
+          font-weight: 700;
+          text-align: center;
+          width: 20%;
+          color: #4177A6;
+          cursor: pointer;
+          transition: .2s;
+      }
+    </style>
+  </head> 
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
-    <form action="" method="post">
+    <form style="text-align: center;" action="" method="post">
       <input type="submit" value="Login" name="" id="">
     </form>
   </body>

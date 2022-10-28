@@ -15,7 +15,7 @@ async function display_table(shop_id){
     var data= await pg_conn.query(product_query);
     var table_string=`
     <h2> Product of shop ${shop_id}</h2>
-        <table border="1">
+        <table style="width: 100%;" border="1">
         <tr>`
     let num_fields=data.fields.length;
     let num_rows=data.rowCount;

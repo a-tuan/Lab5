@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const authen=require("../models/authenticator");
+const authen=require("../Models/authenticator");
 const select_box = require('../Models/display_selectbox');
 const display_table=require("../Models/product_display");
 var delFunc= require('../Models/Delete');
