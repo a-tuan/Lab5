@@ -3,15 +3,20 @@
   <head>
     <title><%= title %></title>
     <!-- <link rel='stylesheet' href='/stylesheets/style.css' /> -->
-    <meta http-equiv="refresh" content="15;url=http://localhost:3000/admin">
+    <script type = "text/JavaScript">
+      function AutoRefresh( t ) {
+         setTimeout("location.reload(true);", t);
+      }
+    </script>
+
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   </head>
-  <body>
+  <body  onload = "JavaScript:AutoRefresh(10000);">
     <h1><%= title %></h1>
     <p>Welcome to <%= name %></p>
     <p><%- box %></p>
     <p> <%- table %> </p>
-    <a href="http://localhost:3000">logout</a>
+    <a href="/loguot">logout</a>
   </body>
 </html>
