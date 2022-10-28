@@ -1,47 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <label>Input Number</label>
- <input type="text" class="textInput">
- <button type="button" class="myBtn">submit</button>
- <label class="textOutput"></label>
- <script>
-   btn = document.querySelector('.myBtn');
-   btn.onclick = function() {
-       var inputValue = document.querySelector('.textInput').value
-       var output = document.querySelector('.textOutput')
-       switch (inputValue % 7) {
-           case 1:
-               output.innerHTML = 'Sunday';
-               break;
-           case 2:
-               output.innerHTML = 'Monday';
-               break;
-           case 3:
-               output.innerHTML = 'Tuesday';
-               break;
-           case 4:
-               output.innerHTML = 'Webnesday';
-               break;
-           case 5:
-               output.innerHTML = 'Thursday';
-               break;
-           case 6:
-               output.innerHTML = 'Friday';
-               break;
-           case 0:
-               output.innerHTML = 'Saturday';
-               break;
-           default:
-               output.innerHTML = 'Invalid'
-       }
-   }
-  </script>
-</body>
+<html>
+  <head>
+    <title><%= title %></title>
+    <!-- <link rel='stylesheet' href='/stylesheets/style.css' /> -->
+    <meta http-equiv="refresh" content="15;url=http://localhost:3000/admin">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= name %></p>
+    <p><%- box %></p>
+    <p> <%- table %> </p>
+    <a href="http://localhost:3000">logout</a>
+  </body>
 </html>
